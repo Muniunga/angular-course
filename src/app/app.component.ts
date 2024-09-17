@@ -9,5 +9,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-course';
+ data={
+  title: 'Angular-Course',
+  name:'Adérito'
+ };
+
+ //Função de clique
+ onLogoClicked(){
+alert(this.data.title)
+ }
+ onKeyup(newTitle:string){
+this.data.title= newTitle;
+ }
 }
